@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crossword Generator</title>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.min.js"></script>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div id="game-container"></div>
+    
+    <div id="input-container">
+        <input 
+            type="text" 
+            id="word-input" 
+            placeholder="Enter words separated by commas (e.g., seat,east,eat,set,tea)" 
+            autocomplete="off"
+        />
+    </div>
+    
+    <div id="loading">
+        <div class="spinner"></div>
+        <div id="loading-text">Generating crossword solutions...</div>
+    </div>
+
+    <script src="src/crossword.js"></script>
+    <script src="src/scene.js"></script>
+    <script src="src/app.js"></script>
+</body>
+</html>
